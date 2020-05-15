@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  back-account:
+    build: .
+    ports:
+        - "5000:5000"
+    command: start
+    environment:
+        DATABASE_URL: "jdbc:postgresql://db:5432/test?user=test&password=test" 
+  db:
+    image: postgres
+    environment:
+       POSTGRES_DB: 'test'
+       POSTGRES_USER: 'test'
+       POSTGRES_PASSWORD: 'test'
+    ports:
+      - "5432:5432"
+
