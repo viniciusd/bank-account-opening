@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/viniciusd/bank-account-opening.svg?branch=master)](https://travis-ci.org/viniciusd/bank-account-opening)
 # 🏦 bank-account-opening
-> * A quick demo of an HTTP API for creating bank accounts*
+> *A quick demo of an HTTP API for creating bank accounts*
 
 ## Background
 We are assuming that a bank account might be created in multiple steps instead of a one-shot creation.
