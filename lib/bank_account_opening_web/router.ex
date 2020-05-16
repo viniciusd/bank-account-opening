@@ -5,7 +5,12 @@ defmodule BankAccountWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", BankAccountWeb do
+  scope "/", BankAccountWeb do
     pipe_through :api
+    if Mix.env() in [:dev, :test] do
+      import Phoenix.LiveDashboard.Router
+
+      live_dashboard "/dashboard", metrics: BankAccountWeb.Telemetry
+    end
   end
 end

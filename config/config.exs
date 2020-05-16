@@ -17,7 +17,7 @@ config :bank_account_opening, BankAccountWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "8fileez7P++OS8GjmNp0+2M4aLGx603hrsEnFhcws4lkr4pIRzqf6C8AddsVc6VX",
   render_errors: [view: BankAccountWeb.ErrorView, accepts: ~w(json)],
-  pubsub: [name: BankAccount.PubSub, adapter: Phoenix.PubSub.PG2],
+  pubsub_server: BankAccount.PubSub,
   live_view: [signing_salt: "qKdX2NFz"]
 
 # Configures Elixir's Logger
