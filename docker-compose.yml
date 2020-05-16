@@ -4,7 +4,7 @@ services:
   back-account:
     build: .
     ports:
-        - "5000:5000"
+        - "4000:4000"
     command: start
     depends_on:
       - db
