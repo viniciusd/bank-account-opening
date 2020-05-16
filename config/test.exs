@@ -2,9 +2,9 @@ use Mix.Config
 
 # Configure your database
 config :bank_account_opening, BankAccount.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "bank_account_opening_test",
+  username: "test",
+  password: "test",
+  database: "test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 

@@ -6,8 +6,6 @@ services:
     ports:
         - "5000:5000"
     command: start
-    environment:
-        DATABASE_URL: "jdbc:postgresql://db:5432/test?user=test&password=test" 
   db:
     image: postgres
     environment:
