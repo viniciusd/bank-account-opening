@@ -8,3 +8,9 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+# Ignore package tarball (built via "mix hex.build").
+bank_account_opening-*.tar
+# Since we are building assets from assets/,
+# we ignore priv/static. You may want to comment
+# this depending on your deployment strategy.
+/priv/static/
